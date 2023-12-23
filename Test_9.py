@@ -79,7 +79,6 @@ def test_hasGit_true():
     for student in response_body["info"]:
         assert student["fgit"]["hasGit"] == True, "Поле git пустое"
     print("test_hasGit_true completed successfully in", end_time-start_time, "seconds")
-    print(end_time - start_time)
 
 def test_hasGit_false():
     start_time = time.time()
